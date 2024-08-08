@@ -1,3 +1,9 @@
+"""
+Proyecto Servidor en Linux - Sistemas Operativos
+@authors: Araya Valentino, Conforti Angelo, Durán Faustino, Patiño Ignacio
+Archivo del servidor 
+"""
+
 import os
 
 # Creamos la clase Servidor

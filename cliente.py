@@ -1,9 +1,15 @@
+"""
+Proyecto Servidor en Linux - Sistemas Operativos
+@authors: Araya Valentino, Conforti Angelo, Durán Faustino, Patiño Ignacio
+Archivo del cliente 
+"""
+
 import os, time
 
 # Creamos la clase Cliente
 class Cliente:
     
-    # # Constructor de la clase
+    # Constructor de la clase
     def __init__(self): 
         
         # Definimos atributos de la clase
@@ -51,6 +57,7 @@ class Cliente:
         os.remove(self.fifo_cliente)
 
 if __name__ == "__main__":
+    # Instanciamos un cliente e iniciamos el proceso
     cliente = Cliente()
     cliente.iniciar()
 
