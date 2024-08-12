@@ -36,7 +36,7 @@ class Servidor:
             # Divide el mensaje en 2 partes, la primer parte es el ID del cliente y la segunda parte es el mensaje
             partes = mensaje.split(' ', 1)
 
-            # Verifica que el mensaje no se haya dividido mal o contenga un error
+            # Verifica que el mensaje no contenga menos de 2 partes
             if len(partes) < 2:
                 return None, None
             
@@ -86,7 +86,7 @@ class Servidor:
                 else:
                     respuesta = "Mensaje no válido."
                     
-                # Llama al método "enviar_mensaje" dandole los parametros necesarios (ID y Respuesta)
+                # Llama al método "enviar_respuesta" dandole los parametros necesarios (ID y Respuesta)
                 self.enviar_respuesta(id_cliente, respuesta)
 
 #PROGRAMA
